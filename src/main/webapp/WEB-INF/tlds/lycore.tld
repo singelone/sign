@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+  http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+
+	<tlib-version>1.0</tlib-version>
+	<short-name>ly-taglib</short-name>
+	
+	<!-- 分页标签 -->
+	<tag>
+		<description>pageTag</description>
+		<name>pageTag</name>
+		<tag-class>com.ly.a.web.tag.PageTag</tag-class>
+		<body-content>scriptless</body-content>		
+		<attribute>
+			<description>page</description>
+			<name>page</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>link</description>
+			<name>link</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+	<!--前台分页标签 -->
+	<tag>
+		<description>newPageTag</description>
+		<name>newPageTag</name>
+		<tag-class>com.ly.a.web.tag.NewsPageTag</tag-class>
+		<body-content>scriptless</body-content>		
+		<attribute>
+			<description>page</description>
+			<name>page</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>maxIndexPages</description>
+			<name>maxIndexPages</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+
+
+	<!-- 显示行标签 -->
+	<tag>
+		<description>pageSizeTag</description>
+		<name>pageSizeTag</name>
+		<tag-class>com.ly.a.web.tag.PageSizeTag</tag-class>
+		<body-content>scriptless</body-content>		
+		<attribute>
+			<description>page</description>
+			<name>page</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>link</description>
+			<name>link</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>	
+	
+	<!-- 显示行标签 -->
+ 	<function>
+		<name>toString</name>
+		<function-class>com.ly.dao.base.BaseDomain</function-class>
+		<function-signature>java.lang.String toString(com.ly.dao.base.BaseDomain,java.lang.String)</function-signature>
+	</function> 
+</taglib>

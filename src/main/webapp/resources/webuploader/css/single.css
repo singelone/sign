@@ -1,0 +1,48 @@
+#filelist{
+    position: relative;
+}
+
+#filelist div.file-panel {
+    position: absolute;
+    height: 24px;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#80000000', endColorstr='#80000000')\0;
+    background: rgba( 0, 0, 0, 0.5 );
+    top: 4px;
+    left: 4px;
+    right:4px;
+    overflow: hidden;
+    z-index: 300;
+}
+
+#filelist div.file-panel span {
+    width: 24px;
+    height: 24px;
+    display: inline;
+    float: right;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../images/icons.png) no-repeat;
+    margin: 5px 1px 1px;
+    cursor: pointer;
+}
+
+#filelist div.file-panel span.rotateLeft {
+    background-position: 0 -24px;
+}
+#filelist div.file-panel span.rotateLeft:hover {
+    background-position: 0 0;
+}
+
+#filelist div.file-panel span.rotateRight {
+    background-position: -24px -24px;
+}
+#filelist div.file-panel span.rotateRight:hover {
+    background-position: -24px 0;
+}
+
+#filelist div.file-panel span.cancel {
+    background-position: -48px -24px;
+}
+#filelist div.file-panel span.cancel:hover {
+    background-position: -48px 0;
+}
